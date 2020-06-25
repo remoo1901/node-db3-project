@@ -37,3 +37,14 @@ JOIN Customer
 JOIN Employee
 ON [order].CustomerId = [Customer].id 
 WHERE [order].EmployeeId = [Employee].id;
+
+
+----------------------------
+
+-- // STRECH // --
+
+---   Displays CategoryName and a new column called 
+---  Count that shows how many products are in each category. Shows 8 records.
+
+
+SELECT COUNT("gategoryName") FROM [Categories]
